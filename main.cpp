@@ -58,10 +58,6 @@ int main (int argc, char** argv)
     int operation;
     int fir_num;
     int sec_num;
-    bool logged;
-    logged = login(logged);
-    if (logged == true)
-    {
         cout <<"Please choose a number: " << "\n";
         cin >> fir_num;
         cout <<"Please choose another number: " << "\n";
@@ -91,6 +87,5 @@ int main (int argc, char** argv)
                 division(fir_num, sec_num);
                 return 0;
         }
-    }
     return 0;
 }
