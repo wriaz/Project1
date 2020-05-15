@@ -5,26 +5,6 @@
 
 using namespace std;
 
-bool login (int logged)
-{
-    string username;
-    string password;
-    cout <<"Please login" << endl << "Username: ";
-    cin >> username;
-    cout <<"Password: ";
-    cin >> password;
-    if (username == "root" && password == "root")
-    {
-        logged == true;
-        cout <<"Access Granted..." << "\n";
-        return true;
-    }
-    else
-    {
-        cout <<"Incorrect username or password" << "\n";
-        return false;
-    }
-}
 
 int addition (int fir_num, int sec_num)
 {
