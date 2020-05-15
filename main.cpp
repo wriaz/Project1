@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -53,6 +54,13 @@ int division (int fir_num, int sec_num)
     }
 }
 
+int power (int fir_num, int sec_num)
+{
+
+        cout << fir_num << " ^ " << sec_num << " = " << pow(fir_num, second) << "\n";
+}
+
+
 int main (int argc, char** argv)
 {
     int operation;
@@ -71,6 +79,7 @@ int main (int argc, char** argv)
         cout << "2. subtraction(-)\n";
         cout << "3. muliplication(*)\n";
         cout << "4. division(/)\n";
+        cout << "5. power(^)\n";
         cout << "Selection: ";
         cin >> operation;
         switch (operation)
@@ -89,6 +98,9 @@ int main (int argc, char** argv)
                 
             case 4:
                 division(fir_num, sec_num);
+                return 0;
+            case 5:
+                power(fir_num, sec_num);
                 return 0;
         }
     }
